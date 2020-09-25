@@ -17,7 +17,7 @@ client = Client(account_sid, auth_token)
 
 def get_status(user_id):
     params = {
-        'user_id': 11993562,
+        'user_id': user_id,
         'fields': 'online',
         'access_token': os.getenv('vk_access_token'),
         'v': 5.92,
