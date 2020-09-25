@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 
 import requests
 
-import twilio.rest
+from twilio.rest import Client
 
 load_dotenv()
 
 account_sid = os.getenv('account_sid')
 auth_token = os.getenv('auth_token')
-client = twilio.rest.Client(account_sid, auth_token)
+client = Client(account_sid, auth_token)
 
 
 def get_status(user_id):
@@ -22,7 +22,7 @@ def get_status(user_id):
         'access_token': os.getenv('vk_access_token'),
         'v': 5.92,
     }
-    response = requests.post('https://api.vk.com/method/users.get/',
+    response = requests.post('https://api.vk.com/method/users.get',
                              params=params)
     return response.json()['response'][0]['online']
 
