@@ -1,7 +1,7 @@
 SMS notifications 
 =================================
 
-The app 'SMS notifications' uses service Twilio and sends sms from number NUMBER_FROM (visit https://www.twilio.com/console/) to verified number NUMBER_TO (https://twilio.com/user/account/phone-numbers/verified) if the user from vk.com is online, otherwise app wait for 5 sec and then check the online status again to send the message.
+The app 'SMS notifications' uses service Twilio and sends sms from number NUMBER_FROM (visit https://www.twilio.com/console/) to verified number NUMBER_TO (https://twilio.com/user/account/phone-numbers/verified) if the user from vk.com is online, otherwise app waits for 5 sec and then check the online status again to send the message.
 You have to be registed on https://www.twilio.com and on https://vk.com to run the app.
 
 There was used OAuth(Open Authorization) - an authorization scheme that provides limited access to another user or app to service resources without the need to transfer a username and password.
