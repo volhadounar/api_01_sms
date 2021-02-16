@@ -14,12 +14,13 @@ Getting Started
     2.  ``git clone https://github.com/volhadounar/api_01_sms.git``
     3.  ``cd api_01_sms``
     4.  ``touch .env`` -- Creates file to keep secret data.
-        File .env should contain: 
-            account_sid= copy value from field ACCOUNT SID on page https://www.twilio.com/console/
-            auth_token=  copy value from AUTH TOKEN on page https://www.twilio.com/console/
-            vk_access_token=
-            NUMBER_FROM= copy from PHONE NUMBER on page https://www.twilio.com/console/
-            NUMBER_TO= copy from https://twilio.com/user/account/phone-numbers/verified.
+    
+        1. File .env should contain: 
+            account_sid=     -- copy value from field ACCOUNT SID on page https://www.twilio.com/console/
+            auth_token=      -- copy value from AUTH TOKEN on page https://www.twilio.com/console/
+            vk_access_token= -- copy the value from https://oauth.vk.com/authorize?client_id=XXXXXX&scope=friends&response_type=token&v=5.92
+            NUMBER_FROM=     -- copy from PHONE NUMBER on page https://www.twilio.com/console/
+            NUMBER_TO=       -- copy from https://twilio.com/user/account/phone-numbers/verified.
 
         Register on https://vk.com/. Open https://vk.com/dev and create your own Standalone-app.
         Get client_id. Input in your browser this url to fetch token:
